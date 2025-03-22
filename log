@@ -1,0 +1,16 @@
+Fri, Mar 21, 2025 10:02:48 PM: 
+ exercises.c | 73 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 71 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:131:28: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+          char *nuevoDato = (char)malloc(sizeof(char));
+                            ^
+exercises.c:131:28: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+exercises.c:140:23: error: cast from pointer to integer of different size [-Werror=pointer-to-int-cast]
+          char *cima = (char)top(pila);
+                       ^
+exercises.c:140:23: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3f6cb15
