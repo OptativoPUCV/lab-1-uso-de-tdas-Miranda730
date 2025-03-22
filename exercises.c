@@ -128,7 +128,7 @@ int parentesisBalanceados(char *cadena) {
    for(int i = 0 ; cadena[i] != '\0' ; i++){
       char dato = cadena[i];
       if(dato == '(' || dato == '{' || dato == '['){
-         char *nuevoDato = (char)malloc(sizeof(char));
+         char *nuevoDato = (char*)malloc(sizeof(char));
          *nuevoDato = dato;
          push(pila, nuevoDato);
 
@@ -137,7 +137,7 @@ int parentesisBalanceados(char *cadena) {
             return 0;
          }
          
-         char *cima = (char)top(pila);
+         char *cima = (char*)top(pila);
          if((dato == ')' && *cima != '(') || 
             (dato == '}' && *cima != '{') || 
             (dato == ']' && *cima != '[')){
